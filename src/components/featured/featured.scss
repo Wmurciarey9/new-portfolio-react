@@ -1,0 +1,116 @@
+@import "../../app.scss";
+
+.featured {
+  height: 70vh;
+  position: relative;
+  padding-top: 180px;
+  margin: 0 30px 30px 30px;
+  padding-bottom: 50px;
+  overflow: hidden;
+
+  @include mobile {
+    margin: 0 10px;
+    height: 100vh;
+    padding-top: 100px;
+  }
+
+  .desc {
+    display: flex;
+    height: 70vh;
+    align-items: center;
+    margin: 30px;
+    background-color: rgb(213, 223, 255);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @include mobile {
+      display: block;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+      align-items: center;
+      text-align: center;
+
+      h1 {
+        font-size: 80px;
+        margin-bottom: 20px;
+        font-weight: 800;
+        color: rgb(8, 69, 116);
+        @include mobile {
+          font-size: 50px;
+        }
+      }
+
+      h2 {
+        font-size: 40px;
+        margin-bottom: 5px;
+        @include mobile {
+          font-size: 23px;
+        }
+      }
+      p {
+        font-size: 20px;
+        @include mobile {
+          font-size: 17px;
+        }
+      }
+
+      img {
+        margin-top: 60px;
+        border: none;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        @include mobile {
+          width: 200px;
+          height: 300px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+
+      @include mobile {
+      }
+
+      .skill-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @include mobile {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(1.8rem, 0rem));
+          gap: 50px;
+          justify-content: center;
+          margin-top: 50px;
+        }
+
+        .skill-item {
+          display: flex;
+          margin: 20px 0px;
+          align-items: center;
+          justify-content: center;
+          font-size: 70px;
+
+          @include mobile {
+          }
+
+          &:hover {
+            color: rgb(77, 138, 185);
+            scale: 1.4;
+            overflow: hidden;
+            transition: ease-in 0.1s;
+          }
+        }
+      }
+    }
+  }
+}

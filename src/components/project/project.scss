@@ -1,0 +1,102 @@
+@import "../../app.scss";
+
+.project:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.2s;
+  box-shadow: 0 4px 8px 0 #5ccbea, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project {
+  display: flex;
+  height: 30vh;
+  width: 40%;
+  background-color: rgba(92, 129, 170, 0.3);
+  border-radius: 20px;
+  margin: 30px 60px;
+  box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+
+  @include mobile {
+    overflow: hidden;
+    width: 90%;
+  }
+
+  img {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    left: 75%;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  .box {
+    padding: 25px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+
+    @include mobile {
+      overflow: hidden;
+    }
+
+    h2 {
+      display: flex;
+      color: rgb(8, 69, 116);
+      font-weight: 800;
+      font-size: 30px;
+    }
+
+    .buttons {
+      display: flex;
+
+      .hover {
+        background: linear-gradient(0deg, hsla(194, 62%, 58%, 0.75), hsla(196, 61%, 58%, 0.75))
+          no-repeat center bottom / 0 var(--bg-h);
+        transition: background-size 350ms;
+        --bg-h: 10%;
+        padding: 5px;
+      }
+      .hover:where(:hover, :focus-visible) {
+        background-size: 100% var(--bg-h);
+        background-position-x: center;
+      }
+
+      button {
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        border: none;
+        font-size: 20px;
+
+        display: flex;
+        cursor: pointer;
+        text-decoration: none;
+
+        .icon {
+          color: rgb(8, 69, 116);
+          margin-left: 5px;
+        }
+      }
+    }
+    span {
+      font-size: 16px;
+      background-color: rgba(133, 153, 190, 0.719);
+      border-radius: 10px;
+      padding: 5px 15px;
+      margin: 10px;
+      font-weight: 800;
+      @include mobile {
+        padding: 4px 6px;
+        margin: 0 15px 0 0;
+      }
+
+      &:hover {
+        background-color: rgba(131, 230, 255, 0.852);
+      }
+    }
+  }
+}
