@@ -20,11 +20,12 @@ function Navbar() {
           <img src={Avatar} alt="" />
         </div>
         <div className="right">
-          <a href="/" className="mainLink">
-            Home
-          </a>
-          <a href="#projects">Projects</a>
-          <a href="/">Skills</a>
+          <Link to={`/`}>
+            <span className="mainLink">Home</span>
+          </Link>
+
+          {/* <span>Projects</span>
+          <span>Skills</span> */}
           <Link to={`/contact`}>
             <span className="mainLink">Contact</span>
           </Link>
