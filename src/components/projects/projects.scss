@@ -11,7 +11,7 @@
     overflow: hidden;
     margin: 0;
     flex: none;
-    height: 240vh;
+    height: 320vh;
   }
 
   h1 {
@@ -39,6 +39,7 @@
 
     @include mobile {
       margin: 2% 5%;
+      height: 40vh;
     }
 
     .left {

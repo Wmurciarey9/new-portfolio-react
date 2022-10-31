@@ -6,6 +6,7 @@
   width: 100%;
 
   @include mobile {
+    height: 20vh;
   }
 
   h1 {
@@ -13,6 +14,7 @@
     justify-content: center;
     font-size: 20px;
     color: white;
+    padding-top: 20px;
   }
 
   .social-icon {
@@ -24,5 +26,6 @@
   .social {
     padding-top: 1rem;
     text-align: center;
+    padding-bottom: 20px;
   }
 }
