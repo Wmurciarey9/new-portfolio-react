@@ -1,5 +1,7 @@
+@import "../../app.scss";
+
 .c {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,6 +15,10 @@
   .c-wrapper {
     padding: 50px;
     display: flex;
+    @include mobile {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
 
     .c-left {
       flex: 1;
@@ -20,6 +26,9 @@
       .c-title {
         font-size: 60px;
         width: 80%;
+        @include mobile {
+          font-size: 30px;
+        }
       }
 
       .c-info-item {
@@ -28,6 +37,10 @@
         margin: 50px 0px;
         font-weight: 300;
         width: 70%;
+        @include mobile {
+          margin: 20px 0px;
+          width: 100%;
+        }
 
         .c-icon {
           width: 30px;
@@ -45,73 +58,55 @@
       .c-desc {
         font-weight: 200;
         font-size: 30px;
-      }
-    }
-
-    form {
-      margin-top: 20px;
-    }
-
-    input {
-      width: 50%;
-      height: 50px;
-      border: none;
-      border-bottom: 1px solid black;
-      margin: 10px 0px;
-      font-size: 14px;
-      padding-left: 10px;
-    }
-
-    textarea {
-      width: 100%;
-      margin: 10px 0px;
-      font-size: 14px;
-      padding-left: 10px;
-    }
-
-    button {
-      border: none;
-      padding: 15px;
-      background-color: #59b256;
-      color: white;
-      font-weight: 500;
-      cursor: pointer;
-    }
-
-    @media screen and (max-width: 480px) {
-      .c-wrapper {
-        flex-direction: column;
-        padding: 0px 50px;
-      }
-
-      .c-title {
-        font-size: 30px;
-      }
-
-      .c-info-item {
-        margin: 20px 0px;
-        width: 100%;
-      }
-
-      .c-desc {
-        display: none;
+        @include mobile {
+          display: none;
+        }
       }
 
       form {
-        margin-top: 0px;
-        display: flex;
-        flex-wrap: wrap;
+        margin-top: 20px;
+        @include mobile {
+          margin-top: 0px;
+          display: flex;
+          flex-wrap: wrap;
+        }
       }
 
       input {
-        width: 35%;
-        height: 40px;
-        margin: 10px;
-        margin-left: 0;
+        width: 50%;
+        height: 50px;
+        border: none;
+        border-bottom: 1px solid black;
+        margin: 10px 0px;
+        font-size: 14px;
+        padding-left: 10px;
+        @include mobile {
+          width: 35%;
+          height: 40px;
+          margin: 10px;
+          margin-left: 0;
+        }
+      }
+
+      textarea {
+        width: 100%;
+        margin: 10px 0px;
+        font-size: 14px;
+        padding-left: 10px;
+        @include mobile {
+        }
       }
 
       button {
-        margin-top: 10px;
+        border: none;
+        padding: 15px;
+        background-color: #59b256;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        @include mobile {
+          margin-top: 10px;
+        }
       }
     }
   }
