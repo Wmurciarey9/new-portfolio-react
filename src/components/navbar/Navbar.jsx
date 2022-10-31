@@ -25,10 +25,9 @@ function Navbar() {
           </a>
           <a href="#projects">Projects</a>
           <a href="/">Skills</a>
-          <a href="/contact" className="mainLink">
-            Contact
-          </a>
-
+          <Link to={`/contact`}>
+            <span className="mainLink">Contact</span>
+          </Link>
           <Toggle />
           {/* <ModeNightIcon className="icon" /> */}
         </div>
