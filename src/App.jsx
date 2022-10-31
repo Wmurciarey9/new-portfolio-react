@@ -9,7 +9,9 @@ function App() {
   const darkMode = theme.state.darkmode;
 
   return (
-    <BrowserRouter style={{ backgroundColor: "red" }}>
+    <BrowserRouter
+      style={{ backgroundColor: darkMode ? "#303030" : "", color: darkMode && "white" }}
+    >
       <Routes>
         <Route exact path="/" element={<Home />} />
 

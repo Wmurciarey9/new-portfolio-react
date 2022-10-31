@@ -3,6 +3,7 @@ import Avatar from "../images/me.jpg";
 
 import React, { useState } from "react";
 import Toggle from "../toggle/Toggle";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,9 +25,9 @@ function Navbar() {
           </a>
           <a href="#projects">Projects</a>
           <a href="/">Skills</a>
-          <a href="/contact" className="mainLink">
-            Contact
-          </a>
+          <Link to={`/contact`}>
+            <span className="mainLink">Contact</span>
+          </Link>
           <Toggle />
           {/* <ModeNightIcon className="icon" /> */}
         </div>
