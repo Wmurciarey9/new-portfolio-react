@@ -136,7 +136,7 @@ function Projects() {
             img="https://cdn2.iconfinder.com/data/icons/team-and-office/160/Dashboard-512.png"
             liveUrl=""
             gitHub=""
-            description="Fully functional react ecommerce store."
+            description="All functionality you need when opening a new tab in one place. Time, bookmarked sites, motivational phrase to keep you going and so much more."
             techOne="React"
             techTwo="Saas"
             techThree="MongoDB"
