@@ -7,6 +7,9 @@
   flex-direction: column;
   height: 140vh;
 
+  .blur-space {
+    filter: blur(1.5px);
+  }
   @include mobile {
     overflow: hidden;
     margin: 0;

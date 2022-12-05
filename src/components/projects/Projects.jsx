@@ -63,7 +63,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="first-row">
+      <div className="first-row blur-space">
         <div className="left">
           <Project
             title="Booking App"
@@ -92,7 +92,7 @@ function Projects() {
         </div>
       </div>
 
-      <div className="second-row">
+      <div className="second-row blur-space">
         <div className="left">
           <Project
             title="Connectify"
@@ -121,7 +121,7 @@ function Projects() {
           />
         </div>
       </div>
-      <div className="third-row">
+      <div className="third-row blur-space">
         <div className="left">
           <Project
             title="Real Estate Site"
