@@ -19,7 +19,10 @@ function Projects() {
           <h2 style={{ color: darkMode && "#1985a1" }}>Netflix Clone</h2>
           <div className="buttons">
             <button className="hover">
-              <a href="Live Website" style={{ color: darkMode && "white" }}>
+              <a
+                href="https://wilsonmrey-netflix-clone.netlify.app/"
+                style={{ color: darkMode && "white" }}
+              >
                 Live Website
               </a>
               <div className="icon" style={{ color: darkMode && "#1985a1" }}>
@@ -27,7 +30,10 @@ function Projects() {
               </div>
             </button>
             <button className="hover">
-              <a href="GitHub" style={{ color: darkMode && "white" }}>
+              <a
+                href="https://github.com/Wmurciarey9/clone-netflix-react"
+                style={{ color: darkMode && "white" }}
+              >
                 GitHub
               </a>
               <div className="icon" style={{ color: darkMode && "#1985a1" }}>
@@ -37,13 +43,12 @@ function Projects() {
           </div>
 
           <p>
-            This is my take on making a clone for netflix. It's got a register, login, home, movie
-            and watch pages.
+            This is my take on making a clone for netflix. It's got a register, login, home,
+            profiles and watch pages.
           </p>
           <div className="tech-used">
             <span>React</span>
             <span>Saas</span>
-
             <span>MongoDB</span>
             <span>Node.js</span>
           </div>
